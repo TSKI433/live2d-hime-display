@@ -1,43 +1,52 @@
-/**
- * @type {import('electron-builder').CliOptions}
- * {@link https://www.electron.build/configuration/configuration}
- */
+const builder = require("electron-builder");
 const options = {
+  targets: builder.Platform.MAC.createTarget(),
   config: {
-    productName: 'electron-vite',
-    appId: 'com.example.yourapp',
+    productName: "Hime Display",
+    appId: "com.example.yourapp",
     directories: {
-      output: 'build'
+      output: "build",
     },
-    files: [
-      'dist/renderer/**/*',
-      'dist/main/**/*'
-    ],
+    files: ["dist/renderer/**/*", "dist/main/**/*"],
     dmg: {
       contents: [
         {
           x: 410,
           y: 150,
-          type: 'link',
-          path: '/Applications'
+          type: "link",
+          path: "/Applications",
         },
         {
           x: 130,
           y: 150,
-          type: 'file'
-        }
-      ]
+          type: "file",
+        },
+      ],
+    },
+    nsis: {
+      oneClick: false,
+      allowElevation: true,
+      allowToChangeInstallationDirectory: true,
+      createDesktopShortcut: true,
+      createStartMenuShortcut: false,
     },
     mac: {
-      icon: 'public/icons/icon.icns'
+      icon: "public/icons/logo.png",
     },
     win: {
-      icon: 'public/icons/icon.ico'
+      icon: "public/icons/logo.png",
+      target: [
+        {
+          target: "nsis",
+          arch: ["x64", "ia32"],
+        },
+      ],
     },
-    linux: {
-      icon: 'public/icons'
-    }
-  }
-}
+    // linux: {
+    //   icon: "public/icons",
+    //   target: "tar.gz",
+    // },
+  },
+};
 
-module.exports = options
+module.exports = options;

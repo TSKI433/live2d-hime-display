@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <title>Vite App</title> -->
+  <style>
+    #motion {
+      /* position: absolute; */
+      margin-top: 100px;
+      width: 100px;
+      z-index: 1000;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+
+    #canvas {
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 这边完全不用涉及DOM的一些负载数据交互，所以似乎直接不用载入Vue -->
+  <!-- <div id="app"></div> -->
+  <canvas id="canvas"></canvas>
+  <!-- <input type="text" id="num" />
+    <button id="motion">执行动作</button> -->
+  <!-- <script type="module" src="display.js"></script> -->
+  <script src="/scripts/live2dcubismcore.min.js"></script>
+  <script src="/scripts/pixi.min.js"></script>
+  <script src="/scripts/live2d.min.js"></script>
+  <script src="/scripts/index.min.js"></script>
+  <!-- <script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dylanNew/live2d/webgl/Live2D/lib/live2d.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pixi.js@5.3.6/dist/pixi.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pixi-live2d-display/dist/index.min.js"></script> -->
+  <script type="module" src="./display.js"></script>
+
+</body>
+
+</html>
