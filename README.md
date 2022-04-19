@@ -49,19 +49,19 @@ yarn run build
 
 鼠标跟踪：
 
-<img src="images/1.gif" alt="1" height="300"/>
+<img src="images/1.gif" alt="1" width="600"/>
 
 载入动作：
 
-<img src="images/2.gif" alt="2" height="300" />
+<img src="images/2.gif" alt="2" width="600" />
 
 点击穿透（在模型非透明部分单击右键触发了本应用的菜单，透明部分右键触发Finder菜单）：
 
-<img src="images/3.gif" alt="3" height="300"/>
+<img src="images/3.gif" alt="3" width="300"/>
 
 拖拽json打开模型：
 
-<img src="images/4.gif" alt="4" height="300" />
+<img src="images/4.gif" alt="4" width="600"/>
 
 ## 使用指引：
 
