@@ -21,13 +21,27 @@ Windows、macOS (Linux 经测试存在一些问题，暂不支持)
 - [Element Plus](https://github.com/element-plus/element-plus)
 - [pixi-live2d-display](https://github.com/guansss/pixi-live2d-display)
 
+## 开发
+
+```bash
+# 安装依赖
+yarn install
+# 启动
+yarn run start
+# Server启动模式（分别通过两个终端窗口下方的两条命令，这种方式主要是可以看到主进程的控制台输出）
+yarn run serve
+eletron .
+# 构建（具体build版本可以在根目录下的build.config.js文件中配置）
+yarn run build
+```
+
 ## 预览：
 
-> 图片中所有涉及的模型仅作演示使用
+> 图片中所有涉及的模型仅作演示使用，如侵立删
 
 控制面板：
 
-<img src="images/config.png" alt="config" style="zoom:30%;" />
+<img src="images/config.png" alt="config" width="600" />
 
 展示器：
 
@@ -35,19 +49,19 @@ Windows、macOS (Linux 经测试存在一些问题，暂不支持)
 
 鼠标跟踪：
 
-<img src="images/1.gif" alt="1" style="zoom:50%;" />
+<img src="images/1.gif" alt="1" height="300"/>
 
 载入动作：
 
-<img src="images/2.gif" alt="2" style="zoom:50%;" />
+<img src="images/2.gif" alt="2" height="300" />
 
 点击穿透（在模型非透明部分单击右键触发了本应用的菜单，透明部分右键触发Finder菜单）：
 
-<img src="images/3.gif" alt="3" style="zoom:50%;" />
+<img src="images/3.gif" alt="3" height="300"/>
 
 拖拽json打开模型：
 
-<img src="images/4.gif" alt="4" style="zoom:50%;" />
+<img src="images/4.gif" alt="4" height="300" />
 
 ## 使用指引：
 
@@ -109,19 +123,5 @@ Gitee：
 - [chenmoxiamu/live2d](https://gitee.com/chenmoxiamu/live2d)
 - [rao_she/live2d_models_collect](https://gitee.com/rao_she/live2d_models_collect)
 - [live2d-widget-models](https://gitee.com/anoinu/live2d-widget-models)
-
-## 开发
-
-```bash
-# 安装依赖
-yarn install
-# 启动
-yarn run start
-# Server启动模式（分别通过两个终端窗口下方的两条命令，这种方式主要是可以看到主进程的控制台输出）
-yarn run serve
-eletron .
-# 构建（具体build版本可以在根目录下的build.config.js文件中配置）
-yarn run build
-```
 
 总的来说，这个应用目前虽然还算能运行，但是感觉各种各样的问题还很多，如果有大佬对本项目感兴趣了的话，请多多指点。
